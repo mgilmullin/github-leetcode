@@ -27,3 +27,21 @@ Constraints:
 nums is a non-decreasing array.
 -109 <= target <= 109
 """
+
+class Solution:
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+        # 1st algo:
+        
+        #result = [-1, -1]
+        
+        #if target in nums:
+        #    result[0] = nums.index(target)
+        #    numsRev = nums[::-1]
+        
+        #    result[1] = len(nums) - numsRev.index(target) - 1
+        
+        #return result
+        
+        #2nd algo:
+        
+        return [nums.index(target), len(nums) - nums[::-1].index(target) - 1] if target in nums else [-1, -1]
