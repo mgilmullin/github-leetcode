@@ -26,6 +26,13 @@ graph[i][j] != i (i.e., there will be no self-loops).
 All the elements of graph[i] are unique.
 The input graph is guaranteed to be a DAG.
 
+Method: Depth First Search: (DFS)
+Build an adjacency list representing the relationship between nodes and edges. 
+Conduct a DFS to find all the paths from source to target.
+
+Time Complexity: O(V + E). V is the number of vertices, E is the number of edges.
+Space Complexity: O(V + E). V is the number of vertices, E is the number of edges.
+
 """
 
 class Solution:
