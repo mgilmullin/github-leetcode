@@ -22,7 +22,7 @@ Constraints:
 1 <= nums.length <= 10
 -10 <= nums[i] <= 10
 
-Method^
+Method:
 A typical backtracking coding problem.
 
 We can have a recursion function to add visited subsets to the final results (Power Set). Remember to make a deep copy whenever we are adding the subset to the results.
